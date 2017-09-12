@@ -10,11 +10,8 @@ class MyPc:
     # Create your own __str__ magic method. Change your __repr__ magic method as needed.
     # Use both correctly from your test code.
 
-    def __repr__(self):
+     def __repr__(self):
         return " pc_owner: %s\n pc_model: %s\n OS: %s\n " % (self.pc_owner, self.pc_model ,self.OS)
-
-    def __str__(self):
-        return " pc_owner: %s\n pc_model: %s\n OS: %s\n " % (self.pc_owner, self.pc_model,self.OS)
         
 if __name__ == '__main__':
    
