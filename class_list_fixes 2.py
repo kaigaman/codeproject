@@ -4,6 +4,12 @@ class MyPc:
         self.OS = OS
         self.pc_model = pc_model
         self.pc_descrip = pc_descrip
+    
+    def save_data(self):   
+        f = open("pc_info.txt","a+")
+        data_in_list_format = [self.pc_owner, self.pc_model, self.OS,self.pc_descrip]
+        f.write(str(data_in_list_format)+'\n')
+        f.close()
  
 
     def __repr__(self):
@@ -12,8 +18,7 @@ class MyPc:
 
         
 if __name__ == '__main__':
-   
-
+	   
     pcs = []
     pcs.append(MyPc('zerox', 'dell', 'windows','Black. Dented. Still works fine, but it LOOKS awful!'))
     pcs.append(MyPc('noris', 'dell', 'linux','Gray. Brand new. Still in original box!'))
@@ -30,5 +35,7 @@ if __name__ == '__main__':
     pcs.append(pcz)
 
     for pcz in pcs:
-        print pcs
-        print
+        pcz.save_data()
+        
+    
+        
