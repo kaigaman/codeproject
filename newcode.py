@@ -1,5 +1,5 @@
 ''' importing the class mypc'''
-import Mypc
+import class_list_fixes 2
 
 def readline():
 	''' now this will print the pc information base on pc per line in a list format'''
